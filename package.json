@@ -1,0 +1,16 @@
+{
+    "name": "server_core",
+    "version": "1.0.0",
+    "description": "server core",
+    "main": "server_core.js",
+    "scripts": {
+        "server": "nodemon server_core.js"
+    },
+    "author": "Marcin Truszczyński",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "nodemon": "^1.19.0",
+        "websocket": "^1.0.28"
+    }
+}

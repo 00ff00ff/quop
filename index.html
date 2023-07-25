@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+body{
+    background-color: black;
+    overflow: hidden;
+}
+#mainWindow{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px black solid;
+    z-index: 5;
+    display: none;
+
+}
+#back{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    display: none;
+
+}
+#front{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    display: none;
+
+}
+#st_btn{
+    background-color: green;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#st_btn:hover{
+    cursor: pointer;
+}
+#nick{
+
+    width: 250px;
+    height: 40px;
+    border-radius: 7px;
+    background-color:darkslategray;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgray;
+    border: none;
+    box-shadow: 0px 0px 8px 5px rgb(15, 26, 26);
+
+
+}
+#nickholder{
+    margin-top:10%;
+
+}
+#name{
+
+    width: 100px;
+    height: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 150px;
+
+
+}
+#stholder{
+    margin-top:10px;
+    text-align: center;
+
+
+}
+#start_scrn{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#nameholder{
+    margin-top:50px;
+}
+
+
+</style>
+</head>
+<body>
+    <div id= "start_scrn">
+        <div id="nameholder"><span id="name"><b>quop</b></span></div>
+        <div id="nickholder"><input type="text" placeholder="nickname" id="nick"/></div>
+        <div id="stholder"><div id="st_btn" onclick="start()">Start</div></div>
+    </div>
+
+    <canvas id="mainWindow" ></canvas>
+    <canvas id="front"></canvas>
+    <canvas id="back"></canvas>
+
+
+    <script src="game_core.js"></script>
+</body>
+
+</html>
